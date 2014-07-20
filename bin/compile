@@ -7,10 +7,10 @@ indent() {
 echo "-----> Found a ZNC config file."
 
 # Download and compile
-curl -L -s -o $1/znc.tar.gz http://znc.in/releases/znc-1.4.tar.gz
-cd $1/
-tar -xzvf znc.tar.gz
-cd znc-1.4
-./configure --prefix="$HOME/.local"
-make
-make install
+#curl -L -s -o $1/znc.tar.gz http://znc.in/releases/znc-1.4.tar.gz
+#cd $1/
+#tar -xzvf znc.tar.gz
+#cd znc-1.4
+#./configure --prefix="$HOME/.local"
+#make
+#make install
