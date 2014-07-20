@@ -8,8 +8,9 @@ echo "-----> Found a ZNC config file."
 
 # Download and compile
 curl -L -s -o $1/znc.tar.gz http://znc.in/releases/znc-1.4.tar.gz
-cd $1
-tar -xzvf znc.tar.gz
+cd $1/
+tar -xzvf znc.tar.gz -C znc
+cd znc
 ./configure
 make
 make install
